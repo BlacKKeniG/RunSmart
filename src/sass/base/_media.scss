@@ -1,0 +1,70 @@
+@media (max-width: 991px) {
+  .button {
+    width: 140px;
+    height: 30px;
+    &_select_puls {
+      margin-top: 50px;
+      width: 250px;
+      height: 45px;
+      font-size: 14px;
+    }
+  }
+  .headliner {
+    font-size: 25px;
+  }
+
+  .header {
+    &__logo {
+      width: 200px;
+      img {
+        margin-top: 8px;
+      }
+    }
+    &__official {
+      margin-top: 8px;
+      font-size: 11px;
+      span {
+        font-size: 15px;
+      }
+    }
+    &__phone {
+      font-size: 12px;
+    }
+  }
+
+  .promo {
+    min-height: 515px;
+    padding: 21px 0 50px 0;
+    &__wrapper {
+      margin-top: 50px;
+    }
+    &__header {
+      font-size: 30px;
+    }
+    &__subheader {
+      font-size: 17px;
+    }
+    &__icons {
+      margin-top: 35px;
+    }
+    &__link {
+      margin-top: 12px;
+    }
+  }
+  .advantages {
+    padding: 50px 0 60px 0;
+    &__wrapper {
+      margin-top: 50px;
+    }
+    &__item {
+      width: 212px;
+      img {
+        margin-bottom: 20px;
+      }
+      span {
+        margin-top: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+}
