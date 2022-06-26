@@ -10,7 +10,7 @@
     <title>Pulse</title>
   </head>
   <body>
-    <div class="promo">
+    <section class="promo">
       <div class="container">
         <header class="header">
           <a class="header__logo">
@@ -53,9 +53,9 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
 
-    <div class="advantages">
+    <section class="advantages">
       <div class="container">
         <h2 class="headliner">наши преимущества</h2>
         <div class="advantages__wrapper">
@@ -84,6 +84,31 @@
           </div>
         </div>
       </div>
-    </div>
+    </section>
+    <section class="consultation">
+      <div class="container">
+        <div class="headliner headliner_consultation">
+          Получите бесплатную консультацию <br />
+          по подбору пульсометра
+        </div>
+        <div class="consultation__instraction">
+          Просто заполните форму <br />
+          заявки и мы перезвоним вам в течении 10 минут
+        </div>
+        <form class="feed_form" action="#">
+          <input name="name" required placeholder="Ваше имя" type="text" />
+          <input
+            name="phone"
+            required
+            placeholder="Ваше Телефон"
+            type="number"
+          />
+          <input name="email" required placeholder="Ваше E-mail" type="email" />
+          <button class="button button_consultation">
+            заказать консультацию
+          </button>
+        </form>
+      </div>
+    </section>
   </body>
 </html>

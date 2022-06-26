@@ -1,4 +1,7 @@
 @media (max-width: 991px) {
+  .container {
+    padding: 0 20px;
+  }
   .button {
     width: 140px;
     height: 30px;
@@ -8,11 +11,17 @@
       height: 45px;
       font-size: 14px;
     }
+    &_consultation {
+      width: 100%;
+      height: 55px;
+    }
   }
   .headliner {
     font-size: 25px;
+    &_consultation {
+      font-size: 32px;
+    }
   }
-
   .header {
     &__logo {
       width: 200px;
@@ -31,7 +40,6 @@
       font-size: 12px;
     }
   }
-
   .promo {
     min-height: 515px;
     padding: 21px 0 50px 0;
@@ -67,12 +75,16 @@
       }
     }
   }
+  .consultation {
+    min-height: 550px;
+    padding: 50px 0;
+    &__instraction {
+      margin-top: 40px;
+    }
+  }
 }
 
 @media (max-width: 767px) {
-  .container {
-    padding: 0 20px;
-  }
   .button {
     width: 110px;
     height: 25px;
@@ -82,6 +94,16 @@
       width: 250px;
       height: 50px;
       font-size: 16px;
+    }
+    &_consultation {
+      width: 100%;
+      height: 55px;
+      font-size: 16px;
+    }
+  }
+  .headliner {
+    &_consultation {
+      font-size: 24px;
     }
   }
   .header {
@@ -126,6 +148,11 @@
       }
     }
   }
+  .consultation {
+    &__instraction {
+      margin-top: 20px;
+    }
+  }
 }
 @media (max-width: 567px) {
   .container {
@@ -136,6 +163,14 @@
       height: 40px;
       font-size: 15px;
     }
+  }
+  .headliner {
+    &_consultation {
+      font-size: 15px;
+    }
+  }
+  .feed_form {
+    margin-top: 20px;
   }
   .header {
     &__logo {
@@ -194,6 +229,13 @@
       span {
         font-size: 14px;
       }
+    }
+  }
+  .consultation {
+    min-height: 475px;
+    &__instraction {
+      margin-top: 20px;
+      font-size: 12px;
     }
   }
 }
