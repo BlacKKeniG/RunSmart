@@ -3,6 +3,7 @@
 }
 @import "base/variables";
 @import "base/container";
+@import "base/mixins";
 @import "blocks/promo";
 @import "blocks/header";
 @import "blocks/buttons";
@@ -10,5 +11,8 @@
 @import "blocks/advantages";
 @import "blocks/consultation";
 @import "blocks/forms";
-@import "base/media";
 @import "blocks/slider-block";
+@import "blocks/catalog";
+@import "blocks/catalog-item";
+@import "blocks/reviews";
+@import "base/media";

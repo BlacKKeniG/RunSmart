@@ -1,0 +1,7 @@
+@mixin hover_btn_tab_link {
+  &:hover {
+    background-color: #6b6b6b;
+    color: #fff;
+    box-shadow: 3px 3px 10px $main-color;
+  }
+}

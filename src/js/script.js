@@ -1,3 +1,4 @@
+//slider
 const sliderLine = document.querySelector(".slider-line");
 const numOfSlide = sliderLine.childElementCount;
 const widthOfSlide = document.querySelector(".slider").clientWidth;
@@ -13,7 +14,6 @@ document.querySelector(".slider-next").addEventListener("click", () => {
     curentSlide = 1;
   }
   sliderLine.style.left = offset + "px";
-  console.log(curentSlide);
 });
 
 document.querySelector(".slider-prev").addEventListener("click", () => {
@@ -26,4 +26,10 @@ document.querySelector(".slider-prev").addEventListener("click", () => {
   sliderLine.style.left = offset + "px";
 });
 
-console.log(widthOfSlide);
+//tabs
+let listItemMainContent = document.querySelectorAll(
+  ".catalog-item__main-content"
+);
+console.log(listItemMainContent);
+let listItemDescrItem = document.querySelectorAll(".catalog-item__descr-item");
+console.log(listItemDescrItem);
