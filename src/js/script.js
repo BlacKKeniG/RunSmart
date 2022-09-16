@@ -27,9 +27,21 @@ document.querySelector(".slider-prev").addEventListener("click", () => {
 });
 
 //tabs
-let listItemMainContent = document.querySelectorAll(
-  ".catalog-item__main-content"
-);
-console.log(listItemMainContent);
-let listItemDescrItem = document.querySelectorAll(".catalog-item__descr-item");
-console.log(listItemDescrItem);
+
+$(document).ready(function () {
+  //modal
+  $("[data-modal=consultation]").on("click", () => {
+    $(".overlay, #consultation").fadeIn("slow");
+  });
+  $(".button_mini").each(function (i) {
+    $(this).on("click", function () {
+      $("#order > .modal__descr").text(
+        $(".catalog-item__subtitel").eq(i).text()
+      );
+      $(".overlay, #order").fadeIn("slow");
+    });
+  });
+  $(".modal__close").on("click", () => {
+    $(".overlay, #consultation, #order, #thanks").fadeOut("slow");
+  });
+});
