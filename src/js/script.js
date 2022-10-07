@@ -81,9 +81,9 @@ $(document).ready(function () {
   validateForms("#order form");
 
   //masks forms
-
   $("input[name=phone]").mask("+ 7(999) 999-99-99");
 
+  //sending data
   $("form").submit(function (e) {
     e.preventDefault(); //отключить обновление страницы
     $.ajax({
@@ -97,6 +97,29 @@ $(document).ready(function () {
       $(".overlay, #thanks").fadeIn();
       $("form").trigger("reset");
     });
+    return false;
+  });
+
+  //smooth scroll and pageup
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1600) {
+      $(".shavron_page_up").fadeIn();
+    } else {
+      $(".shavron_page_up").fadeOut();
+    }
+  });
+
+  $("a[href^='#']").on("click", function () {
+    let href = $(this).attr("href");
+    $("html, body").animate(
+      {
+        scrollTop: $(href).offset().top + "px",
+      },
+      {
+        duration: 400,
+        easing: "linear",
+      }
+    );
     return false;
   });
 });
