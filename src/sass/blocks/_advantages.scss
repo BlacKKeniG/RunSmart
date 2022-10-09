@@ -29,4 +29,14 @@
       }
     }
   }
+  &__animated_icon {
+    animation: heartbeat 2s ease infinite;
+    //animation: heartbeat;
+    //animation-duration: 2s;
+    //animation-timing-function: ease;
+    //animation-iteration-count: infinite;
+    &:hover {
+      animation-play-state: paused;
+    }
+  }
 }

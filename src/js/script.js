@@ -103,9 +103,9 @@ $(document).ready(function () {
   //smooth scroll and pageup
   $(window).scroll(function () {
     if ($(this).scrollTop() > 1600) {
-      $(".shavron_page_up").fadeIn();
+      $(".shevron_page_up").fadeIn();
     } else {
-      $(".shavron_page_up").fadeOut();
+      $(".shevron_page_up").fadeOut();
     }
   });
 
@@ -122,4 +122,6 @@ $(document).ready(function () {
     );
     return false;
   });
+
+  new WOW().init();
 });
