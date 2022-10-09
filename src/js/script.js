@@ -27,8 +27,24 @@ document.querySelector(".slider-prev").addEventListener("click", () => {
 });
 
 //tabs
-
 $(document).ready(function () {
+  //catalog function
+  function toqqleSlide(item) {
+    $(item).each(function (i) {
+      $(this).on("click", function (e) {
+        e.preventDefault();
+        $(".catalog-item__main-content")
+          .eq(i)
+          .toggleClass("catalog-item__main-content_active");
+        $(".catalog-item__descr-item")
+          .eq(i)
+          .toggleClass("catalog-item__descr-item_active");
+      });
+    });
+  }
+  toqqleSlide(".catalog-item__link-more");
+  toqqleSlide(".catalog-item__link-back");
+
   //modal
   $("[data-modal=consultation]").on("click", () => {
     $(".overlay, #consultation").fadeIn("slow");
