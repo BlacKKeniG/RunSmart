@@ -1,12 +1,12 @@
 //slider
 const sliderLine = document.querySelector(".slider-line");
 const numOfSlide = sliderLine.childElementCount;
+const widthOfSlide = document.querySelector(".slider").clientWidth;
 const rightOffset = -widthOfSlide * numOfSlide + widthOfSlide;
 let offset = 0;
 let curentSlide = 1;
 
 document.querySelector(".slider-next").addEventListener("click", () => {
-  widthOfSlide = document.querySelector(".slider").clientWidth;
   ++curentSlide;
   offset -= widthOfSlide;
   if (curentSlide > numOfSlide) {
@@ -17,7 +17,6 @@ document.querySelector(".slider-next").addEventListener("click", () => {
 });
 
 document.querySelector(".slider-prev").addEventListener("click", () => {
-  widthOfSlide = document.querySelector(".slider").clientWidth;
   --curentSlide;
   offset += widthOfSlide;
   if (curentSlide < 1) {
