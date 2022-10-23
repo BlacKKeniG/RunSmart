@@ -35,7 +35,7 @@ gulp.task("watch", function () {
 gulp.task("minifyhtml", function(){
   return gulp.src("src/*.html")
     .pipe(htmlmin({ collapseWhitespace: true }))
-    .pipe(gulp.dest('dist/'));
+    .pipe(gulp.dest('dist'));
 });
 
 gulp.task("scripts", function(){
@@ -58,4 +58,4 @@ gulp.task("minifyimg", function(){
     .pipe(gulp.dest('dist/img'));
 });
 
-gulp.task("default", gulp.parallel("watch", "server", "styles", "minifyhtml", "scripts", "fonts", "mailer", "minifyimg"));
+gulp.task("default", gulp.parallel("watch", "server", "minifyhtml", "styles", "scripts", "fonts", "mailer", "minifyimg"));
